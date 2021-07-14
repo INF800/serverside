@@ -25,8 +25,8 @@ def post_proc(kps):
     return kps.tolist()
 
 
-@app.post("/uploadfile/")
-def create_upload_file(req: FrameRequest):
+@app.post("/predict_pose/")
+def predict_pose(req: FrameRequest):
     """
     to test the endpoint manually, goto https://elmah.io/tools/base64-image-encoder/ 
     and create base64 string and use it in swagger ui 
